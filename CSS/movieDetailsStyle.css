@@ -1,0 +1,206 @@
+body, html{
+    font-family: 'Noto Sans JP', sans-serif;
+    background-color: steelblue;
+    background-size: cover;
+    padding:0;
+    margin:0;
+}
+
+.mainContainer{
+    width: 1100px;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #5793c5;
+}
+
+.movieTitle{
+    float: left;
+    width: 500px;
+    height: 50px;
+    padding: 5px;
+    font-size: 30px;
+    color: white;
+}
+
+.movieImage img{
+    width: 200px;
+    height: 200px;
+}
+
+.movieImage{
+    width: 205px;
+    height: 205px;
+    float: left;
+}
+
+.movieTrailer iframe{
+    width: 400px;
+    height: 400px;
+}
+
+.movieTrailer{
+    width: 400px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.movieDescription{
+
+    float: left;
+    width: 800px;
+    height: 150px;
+}
+
+.movieDate{
+    clear: both;
+}
+
+textarea{
+    width: 400px;
+    height: 80px;
+    background-color: #fff;
+    resize: none;
+}
+
+button{
+    width: 100px;
+    height: 30px;
+    background-color:#282828;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.commentBox{
+    width: 95%;
+    padding: 20px;
+    margin-bottom: 4px;
+    background-color: #fff;
+    border-radius: 4px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.commentBox p{
+    font-size: 14px;
+    line-height: 16px;
+    color: #282828;
+    font-weight: 100;
+}
+
+.edit-form{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.edit-form button{
+    width: 40px;
+    height: 20px;
+    color: #282828;
+    background-color: #ffffff;
+    opacity: 0.7;
+}
+
+.edit-form button:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.delete-form{
+    position: absolute;
+    top: 0;
+    right: 70px;
+}
+
+.delete-form button{
+    width: 40px;
+    height: 20px;
+    color: #282828;
+    background-color: #ffffff;
+    opacity: 0.7;
+}
+
+.delete-form button:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.rating{
+    width: 500px;
+    height: 20px;
+    padding: 40px;
+    margin-right: auto;
+    margin-left: auto;
+    align-items: center;
+    text-align: center;
+}
+
+.fa-star{
+    color: white;
+}
+
+.actorPhotoImg{
+    width: 250px;
+    height: 250px;
+}
+
+.actors{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.actorDetails{
+    margin: 20px;
+}
+
+.actorsText{
+    height: 40px;
+    font-size: 40px;
+    color: white;
+    margin: 20px;
+}
+
+.directorText{
+    height: 40px;
+    font-size: 40px;
+    color: white;
+    margin: 20px;
+}
+
+.directorPhotoImg{
+    width: 250px;
+    height: 250px;
+}
+
+.director{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.directorDetails{
+    margin: 20px;
+}
+
+.stars input{
+    width: 50px;
+    height: 50px;
+    float:right;
+}
+
+.avgScore{
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+    color: white;
+}

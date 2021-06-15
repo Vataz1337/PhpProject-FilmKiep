@@ -1,0 +1,89 @@
+body{
+    font-family: 'Noto Sans JP', sans-serif;
+    background-image: url("../images/background1.jpg");
+    background-size: cover;
+    padding:0;
+    margin:0;
+}
+
+.mainContainer{
+    width: 500px;
+    height: 770px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 100px;
+    -webkit-box-shadow: 0px 0px 5px 2px rgba(0,0,0,7);
+    box-shadow: 0px 0px 5px 2px rgba(0,0,0,7);
+    background-color: steelblue;
+    border-radius: 10px;
+}
+
+.registerText{
+    height: 100px;
+    text-align: center;
+    padding: 5px;
+    font-size: 60px;
+    color: white;
+}
+
+.registerBox{
+    width: 300px;
+    height: 300px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+input[type=text],
+[type=password],
+[type=email]{
+    width: 280px;
+    padding: 10px;
+    margin-top: 30px;
+    outline: none;
+    border-radius: 3px;
+    border: 2px;
+    color: steelblue;
+    font-size: 25px;
+}
+
+input[type=text]:focus,
+[type=password]:focus,
+[type=email]:focus{
+    -webkit-box-shadow: 0px 0px 5px 2px rgba(0,0,0,7);
+    box-shadow: 0px 0px 5px 2px rgba(0,0,0,7);
+}
+
+.buttons{
+    margin-top: 20px;
+}
+
+#button{
+    width: 300px;
+    margin-top: 10px;
+    height: 50px;
+    font-size: 25px;
+    border-radius: 3px;
+    border: none;
+    color: steelblue;
+    transition: 1s;
+}
+
+#button:hover{
+    -webkit-box-shadow: 0px 0px 5px 2px rgba(0,0,0,7);
+    box-shadow: 0px 0px 5px 2px rgba(0,0,0,7);
+    cursor: pointer;
+    color: black;
+    transform: scale(1.1);
+    z-index: 3;
+}
+
+.error{
+    color: red;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.g-recaptcha{
+    margin-top: 30px;
+}
