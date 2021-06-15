@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JavaScriptLibraryMappings">
+    <file url="PROJECT" libraries="{@glidejs, a332d3cf95, api, font-awesome, jquery-3.6.0}" />
+  </component>
+</project>

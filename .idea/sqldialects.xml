@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/HomePage/addActor.php" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/HomePage/addActorMovie.php" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/HomePage/addDirector.php" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/HomePage/addDirectorMovie.php" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/HomePage/addMovie.php" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/HomePage/allMovies.php" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/HomePage/deleteComment.php" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/HomePage/editComment.php" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/HomePage/movieComment.php" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/HomePage/movieDetails.php" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/HomePage/rating.php" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/loginRegister/login.php" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/loginRegister/register.php" dialect="GenericSQL" />
+  </component>
+</project>
