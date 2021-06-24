@@ -18,6 +18,7 @@ if(isset($_POST['upload'])) {
     $realise_date = $_POST['release'];
     $trailer = $_POST['trailer'];
     $link = $_POST['link'];
+    $genre = $_POST['genre'];
 
     try {
         $connect = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
@@ -26,12 +27,11 @@ if(isset($_POST['upload'])) {
             throw new Exception(mysqli_connect_errno());
         } else {
             move_uploaded_file($tempname, "../movieImages/$imgname");
-            if($connect->query("INSERT INTO movie (description, title, image, realise_date, link, trailer) VALUES ('$description', '$title', '$imgname', '$realise_date', '$link', '$trailer')")) {
+            if($connect->query("INSERT INTO movie (description, title, image, realise_date, link, trailer, genre_fk) VALUES ('$description', '$title', '$imgname', '$realise_date', '$link', '$trailer', '$genre')")) {
                 $_SESSION['upload'] = "Movie added successfully!";
             }else {
                 throw new Exception($connect->error);
             }
-            $connect->close();
         }
     }catch (Exception $e){
         $_SESSION['upload'] = "Something went wrong!";
@@ -56,32 +56,50 @@ if(isset($_POST['upload'])) {
         <div class="inputs">
             <div class="title">
                 <label>
-                    <input type="text" placeholder="Title" name="title">
+                    <input type="text" placeholder="Title" name="title" required>
                 </label>
             </div>
             <div class="release">
                 <label>
-                    <input type="date" placeholder="Realise date" name="release">
+                    <input type="date" placeholder="Realise date" name="release" required>
                 </label>
             </div>
             <div class="trailer">
                 <label>
-                    <input type="text" placeholder="Link to trailer" name="trailer">
+                    <input type="text" placeholder="Link to trailer" name="trailer" required>
                 </label>
             </div>
             <div class="link">
                 <label>
-                    <input type="text" placeholder="Link to movieDB" name="link">
+                    <input type="text" placeholder="Link to movieDB" name="link" required>
                 </label>
             </div>
+            <div class="genre">
+                Genre:
+                <label for="genre"></label><select name="genre" id="genre" required>
+                    <?php
+                    require_once "../loginRegister/connect.php";
+                    $connect = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
+                    $sqlGenreAdd = mysqli_query($connect, "SELECT * FROM genre");
+                    while($rowOfGenre = mysqli_fetch_array($sqlGenreAdd)){
+                        ?>
+                        <option value=<?php echo $rowOfGenre['genre_id'] ?>><?php echo $rowOfGenre['nameOfgenre'] ?></option>
+                        <?php
+                    }
+                    ?>
+                </select>
+            </div>
             <div class="image">
+                <div class="imageText">
+                    Movie image:
+                </div>
                 <label>
-                    Platak filmu:<input type="file" placeholder="image" name="image">
+                    <input type="file" placeholder="image" name="image" required>
                 </label>
             </div>
             <div class="opis">
                 <label>
-                <textarea type="text" placeholder="Movie description" name="description">
+                <textarea type="text" placeholder="Movie description" name="description" required>
                 </textarea>
                 </label>
             </div>

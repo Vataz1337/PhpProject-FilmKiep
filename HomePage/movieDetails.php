@@ -43,6 +43,17 @@ while($data = mysqli_fetch_array($show))
             <div class="movieDate">
                 Realise date: <?php echo $data['realise_date']; ?>
             </div>
+            <div class="genre">
+                <?php
+                $genreId = $data['genre_fk'];
+                $sqlGenre = "SELECT * FROM genre WHERE genre_id='$genreId'";
+                $genreResult = mysqli_query($connect,$sqlGenre);
+                while($rowOfGenre = mysqli_fetch_array($genreResult)){
+                    $genreName = $rowOfGenre['nameOfgenre'];
+                }
+                echo "Genre: $genreName ";
+                ?>
+            </div>
             <div class="rating">
                 <form action="rating.php" method="post">
                     <div class="stars">
@@ -120,12 +131,16 @@ while($data = mysqli_fetch_array($show))
                     $sqlScore = "SELECT * FROM score WHERE movie_fk='$id'";
                     $scoreResult = mysqli_query($connect,$sqlScore);
                     $numOfScores = mysqli_num_rows($scoreResult);
+                    if($numOfScores<=0){
+                        echo "This movie has 0 reviews";
+                    }else{
                     $total = $connect->query("SELECT SUM(score) AS total FROM score WHERE movie_fk='$id'");
                     $resultTotal = $total->fetch_array();
                     $rowTotal = $resultTotal['total'];
                     $avg = $rowTotal/$numOfScores;
                 ?>
                 Avarage score: <?php echo $avg ?> from <?php echo $numOfScores ?> scores
+                <?php }?>
             </div>
             <div class="movieTrailer">
                 <iframe src="<?php echo $trailerLink ?>">

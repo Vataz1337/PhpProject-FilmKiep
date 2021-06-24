@@ -1,7 +1,9 @@
 body, html{
     font-family: 'Noto Sans JP', sans-serif;
-    background-color: steelblue;
+    background-image: url("../images/background2.jpg");
     background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     padding:0;
     margin:0;
 }
@@ -196,6 +198,11 @@ button{
     width: 50px;
     height: 50px;
     float:right;
+}
+
+.stars input:hover{
+    transform: scale(1.5);
+    z-index: 3;
 }
 
 .avgScore{

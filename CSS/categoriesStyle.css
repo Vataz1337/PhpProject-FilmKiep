@@ -1,0 +1,207 @@
+body, html{
+    font-family: 'Noto Sans JP', sans-serif;
+    background-color: steelblue;
+    background-size: cover;
+    padding:0;
+    margin:0;
+}
+
+.Image{
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    float:left;
+}
+
+.list{
+    text-align: center;
+    width: 1100px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wholeMovie{
+    max-height: 160px;
+    margin-top:10px;
+    -webkit-box-shadow: 0 0 5px 2px rgba(0,0,0,7);
+    box-shadow: 0 0 5px 2px rgba(0,0,0,7);
+    border-radius: 10px;
+    background-color: #5793c5;
+}
+
+.wholeText{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    top:20px;
+    margin-left: 50%;
+    color: white;
+    font-size: 18px;
+}
+
+.logoBrowser{
+    width: 1850px;
+    height: 250px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
+    -webkit-box-shadow: 0 0 5px 2px rgba(0,0,0,7);
+    box-shadow: 0 0 5px 2px rgba(0,0,0,7);
+    border-radius: 10px;
+    background-color: #5793c5;
+    padding: 10px;
+    color: white;
+}
+
+.logo img{
+    width: 350px;
+    height: 240px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.logo{
+    float: left;
+}
+
+.title{
+    float: left;
+    height: 100px;
+    text-align: center;
+    padding: 5px;
+    font-size: 80px;
+    color: white;
+    margin-left: 355px;
+    letter-spacing: 5px;
+}
+
+.browserImage{
+    float: left;
+}
+
+.browserImage input{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: 50px;
+}
+
+.browser{
+    float: left;
+    position: relative;
+    top: 25px;
+}
+
+input[type=text]{
+    width: 500px;
+    padding: 10px;
+    margin-top: 30px;
+    outline: none;
+    border-radius: 3px;
+    border: 2px;
+    color: steelblue;
+    font-size: 20px;
+}
+
+.browserImage_browserInput{
+    float: right;
+    margin-right: 20px;
+}
+
+#button{
+    width: 285px;
+    height: 50px;
+    font-size: 25px;
+    border-radius: 3px;
+    border: none;
+    color: steelblue;
+    transition: 0.1s;
+}
+
+#button:hover{
+    -webkit-box-shadow: 0 0 5px 2px rgba(0,0,0,7);
+    box-shadow: 0 0 5px 2px rgba(0,0,0,7);
+    cursor: pointer;
+    color: black;
+    transform: scale(1.05);
+    z-index: 3;
+}
+
+.button{
+    float: right;
+}
+
+.buttons{
+    float: right;
+    margin-top: 85px;
+}
+
+.sorterGenre{
+    top: 400px;
+    margin-left: 4%;
+    position: relative;
+}
+
+.noMovie{
+    color: red;
+    position: relative;
+    top: 400px;
+}
+
+
+
+.custom-select select {
+    display: none; /*hide original SELECT element: */
+}
+
+.select-selected {
+    background-color: DodgerBlue;
+}
+
+/* Style the arrow inside the select element: */
+.select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+}
+
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 7px;
+}
+
+/* style the items (options), including the selected item: */
+.select-items div,.select-selected {
+    color: #ffffff;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+}
+
+/* Style items (options): */
+.select-items {
+    position: absolute;
+    background-color: DodgerBlue;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+    display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+

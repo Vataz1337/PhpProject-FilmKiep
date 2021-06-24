@@ -12,6 +12,7 @@
     <file url="file://$PROJECT_DIR$/HomePage/movieComment.php" dialect="GenericSQL" />
     <file url="file://$PROJECT_DIR$/HomePage/movieDetails.php" dialect="GenericSQL" />
     <file url="file://$PROJECT_DIR$/HomePage/rating.php" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/HomePage/sortMovies.php" dialect="GenericSQL" />
     <file url="file://$PROJECT_DIR$/loginRegister/login.php" dialect="GenericSQL" />
     <file url="file://$PROJECT_DIR$/loginRegister/register.php" dialect="GenericSQL" />
   </component>
