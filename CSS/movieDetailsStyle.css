@@ -60,10 +60,11 @@ body, html{
 }
 
 textarea{
-    width: 400px;
+    width: 99.5%;
     height: 80px;
     background-color: #fff;
     resize: none;
+
 }
 
 button{
@@ -210,4 +211,12 @@ button{
     padding: 20px;
     font-size: 20px;
     color: white;
+}
+
+.movieLink{
+    width: 250px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    padding: 50px;
 }
